@@ -1,0 +1,66 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?xhd6tb');
+  src:  url('fonts/icomoon.eot?xhd6tb#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?xhd6tb') format('truetype'),
+    url('fonts/icomoon.woff?xhd6tb') format('woff'),
+    url('fonts/icomoon.svg?xhd6tb#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-back:before {
+  content: "\e902";
+}
+.icon-down-arrow:before {
+  content: "\e904";
+}
+.icon-instagram:before {
+  content: "\e905";
+}
+.icon-next:before {
+  content: "\e906";
+}
+.icon-telegram:before {
+  content: "\e907";
+}
+.icon-up-arrow .path1:before {
+  content: "\e908";
+  color: rgb(255, 193, 7);
+}
+.icon-up-arrow .path2:before {
+  content: "\e909";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-user:before {
+  content: "\e90a";
+}
+.icon-whatsapp:before {
+  content: "\e90b";
+}
+.icon-confirm:before {
+  content: "\e900";
+}
+.icon-envelope:before {
+  content: "\e901";
+}
+.icon-phone:before {
+  content: "\e903";
+}

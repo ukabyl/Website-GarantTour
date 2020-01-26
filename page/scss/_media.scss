@@ -1,0 +1,333 @@
+@import "vars";
+
+@media screen and (max-width: 1200px)  {
+	// ************************* Best Tour
+	.best-tour-cards{
+  	&__item{
+  		max-width: 300px;
+  	}
+  }
+  // ************************* Best Tour
+
+  // ********************************* Popular Tour
+	.popular-tour{
+		&__cards{
+			margin-top: 2rem;
+		}
+		.slick-list{
+			padding: 5px 0;
+		}
+	}
+	.mini-cards{
+		&__item{
+			margin-bottom: 0;
+			width: 90% !important;
+			display: block !important;
+			margin-right: auto !important;
+			margin-left: auto;
+			&:hover{
+				transform: scale(1);
+			}
+			&-country{
+				}
+			}
+			&-price{
+			}
+		}
+	// ********************************* Popular Tour
+}
+
+@media screen and (max-width: 996px) {
+
+	.form{
+		&__checked{
+			padding-right: 15px;
+			padding-left: 15px;
+			font-size: .9rem;
+		}
+	}
+	
+	.section{
+		&__title{
+			font-size: 1.5rem;
+		}
+	}
+
+  // ************************* Header
+  .header{
+  	border-bottom: 1px solid $accent;
+  	&__logo{
+			width: 100px;
+		}
+  }
+  .header-bottom{
+  	display: none;
+  }
+  .phone-numbers{
+  	display: none;
+  }
+  .header-top{
+  	padding: .5rem;
+  	&__wrapper{
+  	}
+  	&__block{
+  		&-button{
+	  		display: none;
+	  	}
+  	}
+  	&__hamburger{
+  		display: block;
+  		height: 22px;
+  	}
+  }
+  .lang-ds{
+  	display: none;
+  }
+  .lang-mb{
+  	display: block;
+  }
+  .socials{
+  	display: none;
+  }
+  // ************************* Header
+
+  // ************************* Main
+  .main{
+  	text-align: center;
+  	padding-bottom: 3rem;
+  	&__title{
+  		font-size: 1.9rem;
+  	}
+  	&__form{
+  		margin-right: auto;
+  		margin-top: 2rem;
+  	}
+  	&__button{
+  		font-size: 1rem;
+  	}
+  	&__text{
+  		font-size: 1rem;
+  		b{
+  			display: block;
+  		}
+  	}
+  	&__form{
+  		max-width: 400px;
+  	}
+  	&__cards{
+  		bottom: unset;
+  		position: relative;
+  	}
+  	margin-bottom: -10px;
+  }
+  .main-cards{
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		margin-top: 1rem;
+		&__item{
+			width: 100%;
+			max-width: 400px;
+			margin-top: 1rem;
+			&-title{
+			}
+		}
+	}
+  // ************************* Main
+
+  // ************************* Best Tour
+  .arrow{
+		font-size: 1.7rem;
+  	&__left{
+			left: -16px;
+  	}
+  	&__right{
+			right: -16px;
+  	}
+  }
+  .best-tour{
+  	padding-top: 3rem;
+  }
+  .best-tour-cards{
+  	&__item{
+  		max-width: 96%;
+  		margin-right: 2%;
+  		margin-left: 2%;
+  	}
+  }
+  // ************************* Best Tour
+
+  //************************** Popular tour
+  .popular-tour{
+
+		&__helper{
+			position: relative;
+			right: unset;
+			bottom: unset;
+			margin: 1rem 0;
+			margin-top: 2rem;
+		}
+		padding-bottom: 2rem;
+  }
+  .helper{
+  	text-align: center;
+  	flex-direction: column;
+  	justify-content: center;
+  	align-items: center;
+  	padding-top: 3rem;
+  	max-width: 400px;
+  	margin-right: auto;
+  	margin-left: auto;
+  	&__manager{
+  		width: 100%;
+  	}
+  	&__inner{
+  		margin-top: 1rem;
+  		width: 100%;
+  		display: flex;
+  		flex-direction: column;
+	  	justify-content: center;
+	  	align-items: center;
+  	}
+  	&__contacts{
+  		flex-wrap: wrap;
+  		justify-content: center;
+  	}
+  	&__button{
+  		margin-bottom: 1rem;
+  		display: block;
+  		width: 100%;
+  	}
+  }
+  //************************** Popular tour
+
+   //*************************** News
+   .news{
+   	&__title{
+   		font-size: 1.3rem;
+   	}
+   	&__text{
+   		font-size: 1.1rem;
+   	}
+   }
+    //************************** News
+
+  // ************************* Helper
+	.helper{
+		
+	}
+	// ************************* Helper
+
+	// ************************* Local tourism
+	.local-tourism{
+		padding-top: 0;
+	}
+	.local-tourism-cards{
+		&__item{
+			max-width: 94%;
+		}
+	}
+	// ************************* Local tourism
+
+	// ********************************* FAQ
+	.faq-tab{
+		overflow: hidden;
+		&__nav{
+			&-item{
+				border-radius: 0;
+				padding: 15px 40px;
+				display: flex;
+				align-items: center;
+				background: $accent;
+				&:first-child, &:last-child{
+					border-radius: 0;
+				}
+			}
+		}
+
+		.accordionjs .acc_section .acc_head{
+			padding: 5px 32px 5px 5px;
+			font-size: .9rem;
+		}
+		.accordionjs .acc_section .acc_content{
+			font-size: .9rem;
+			padding: 10px 5px;
+		}
+
+		.far-arrow-next{
+			right: 10px;
+			color: #fff;
+		}
+		.far-arrow-prev{
+			left: 10px;
+			color: #fff;
+		}
+	}
+	// ********************************* FAQ
+
+	// ********************************* Map
+.map{
+	position: relative;
+	&__constructor{
+		width: 85%;
+		height: 200px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	&__contact{
+		position: relative;
+		overflow: hidden;
+		top: unset;
+		transform: unset;
+		left: unset;
+	}
+}
+.contact{
+	max-width: 310px;
+	margin-right: auto;
+	margin-left: auto;
+	background: #fff;
+	left: unset;
+	padding: 2rem 1rem;
+	text-align: center;
+	&__title{
+		font-size: 1.4rem;
+	}
+	&__address{
+		font-size: 1rem;
+	}
+	&__question{
+		font-size: 1.2rem;
+	}
+	&__button{
+
+	}
+}
+// ********************************* Map
+
+
+// ********************************* Footer
+.footer{
+	&__content{
+	}
+	&__left{
+		span{
+			display: none;
+		}
+	}
+	&__right{
+	}
+	&__logo{
+		width: 110px;
+	}
+	&__lang-ds{
+	}
+	&__button{
+		display: none;
+	}
+	&__phone-numbers{
+		display: flex;
+	}
+}
+// ********************************* Footer
+}
