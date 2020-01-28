@@ -1,5 +1,8 @@
 $(function() {
 
+	$(document).scrollTop(0);
+	
+
 	// *********************************** Slider Default Function
 	function sliderDefault(cls) {
 		$(cls).slick({
@@ -232,12 +235,6 @@ $(function() {
 	});
 	// ***************************************** Form Submit
 
-	// ***************************************** AOS
-		setTimeout(function() {
-			AOS.init();
-		}, 1000)
-	// ***************************************** AOS
-
 	// ***************************************** Manager & Helper
 	$('.manager').click(function() {
 		$('.helper').toggleClass('active');
@@ -246,6 +243,12 @@ $(function() {
 		$('.helper').removeClass('active');
 	})
 	// ***************************************** Manager & Helper
+
+	// ***************************************** AOS
+		setTimeout(function() {
+			AOS.init();
+		}, 1000)
+	// ***************************************** AOS
 
 
 });
