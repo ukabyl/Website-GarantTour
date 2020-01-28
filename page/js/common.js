@@ -96,8 +96,8 @@ $(function() {
 			  breakpoint: 996,
 			  settings: {
 			    slidesToShow: 1,
-			    slidesPerRow: 1,
-			    rows: 4
+			    slidesPerRow: 2,
+			    rows: 2
 			  }
 			},
 		]

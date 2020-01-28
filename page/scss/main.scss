@@ -76,8 +76,8 @@ ul{
 		li{
 			position: relative;
 	    display: inline-block;
-	    width: 20px;
-	    height: 20px;
+	    width: 30px;
+	    height: 30px;
 	    padding: 0;
 	    cursor: pointer;
 	    &.slick-active{
@@ -92,9 +92,9 @@ ul{
 		    font-size: 0;
 		    line-height: 0;
 		    display: block;
-		    width: 20px;
-		    height: 20px;
-		    padding: 5px;
+		    padding: 0;
+		    width: 30px;
+		    height: 30px;
 		    cursor: pointer;
 		    color: transparent;
 		    border: 0;
@@ -102,13 +102,13 @@ ul{
 		    background: transparent;
 				&:before {
 			    font-family: 'slick';
-			    font-size: 20px;
-			    line-height: 20px;
+			    font-size: 35px;
+			    line-height: 30px;
 			    position: absolute;
 			    top: 0;
 			    left: 0;
-			    width: 20px;
-			    height: 20px;
+			    width: 30px;
+			    height: 30px;
 			    content: '•';
 			    text-align: center;
 			    opacity: .25;
@@ -506,7 +506,7 @@ ul{
 	flex-wrap: wrap;
 	&__item{
 		width: 15%;
-		border-radius: 10px;
+		border-radius: 5px;
 		box-shadow: 0 0 10px -5px #333;
 		padding-bottom: 10px;
 		margin-right: 1%;
@@ -519,6 +519,9 @@ ul{
 			transform: scale(1.05);
 		}
 		&-img{
+			overflow: hidden;
+			border-top-right-radius: 5px;
+			border-top-left-radius: 5px;
 			img{
 				width: 100%;
 			}
@@ -943,6 +946,8 @@ ul{
 }
 
 .manager{
+	overflow: hidden;
+	border: 1px solid $accent;
 	animation-duration: 3s;
   animation: upDown .7s linear 2s infinite alternate;
 	position: fixed;

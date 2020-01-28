@@ -99,6 +99,17 @@
   .main{
   	text-align: center;
   	padding-bottom: 3rem;
+  	background: $accent;
+  	padding-top: 0;
+  	margin-top: 0;
+  	&_bg_mb{
+  		background-image: url('../img/main-bg-min.png');
+			background-size: cover;
+			background-position: top center;
+			background-repeat: 	no-repeat;
+			height: 100vh;
+			margin-top: -10px;
+  	}
   	&__title{
   		font-size: 1.9rem;
   	}
@@ -116,11 +127,11 @@
   		}
   	}
   	&__form{
-  		width: 85%;
-  		max-width: 400px;
+  		display: none;
   	}
   	&__cards{
   		bottom: unset;
+  		margin-top: 3rem;
   		position: relative;
   	}
   	margin-bottom: -10px;
@@ -129,7 +140,6 @@
 		align-items: stretch;
 		flex-wrap: wrap;
 		justify-content: space-between;
-		margin-top: 1rem;
 		&__item{
 			width: 48%;
 			padding: 1.5rem .5rem;
@@ -240,11 +250,39 @@
 
 	// ************************* Team
 	.team{
+
+		.arrow{
+			top: 47%;
+		}
+		
+		// .slick-track{
+		// 	width: 100% !important;
+		// }
+
+		// .slick-slide{
+		// 	width: 100% !important;
+		// }
+
 		.slick-slide > div {
 			margin-bottom: 1rem;
+			display: flex;
+			justify-content: space-between;
+
 			&:last-child{
 				margin-bottom: 0;
 			}
+		}
+	}
+	.team-cards{
+		&__item{
+			width: 45% !important;
+		}
+		&__person{
+			width: 80px;
+			height: auto;
+		}
+		&__name{
+
 		}
 	}
 	// ************************* Team

@@ -192,8 +192,8 @@ ul {
 .dots li {
   position: relative;
   display: inline-block;
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   padding: 0;
   cursor: pointer;
 }
@@ -207,9 +207,9 @@ ul {
   font-size: 0;
   line-height: 0;
   display: block;
-  width: 20px;
-  height: 20px;
-  padding: 5px;
+  padding: 0;
+  width: 30px;
+  height: 30px;
   cursor: pointer;
   color: transparent;
   border: 0;
@@ -219,13 +219,13 @@ ul {
 
 .dots li button:before {
   font-family: 'slick';
-  font-size: 20px;
-  line-height: 20px;
+  font-size: 35px;
+  line-height: 30px;
   position: absolute;
   top: 0;
   left: 0;
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   content: '•';
   text-align: center;
   opacity: .25;
@@ -737,7 +737,7 @@ ul {
 
 .mini-cards__item {
   width: 15%;
-  border-radius: 10px;
+  border-radius: 5px;
   -webkit-box-shadow: 0 0 10px -5px #333;
           box-shadow: 0 0 10px -5px #333;
   padding-bottom: 10px;
@@ -754,6 +754,12 @@ ul {
   -webkit-transform: scale(1.05);
       -ms-transform: scale(1.05);
           transform: scale(1.05);
+}
+
+.mini-cards__item-img {
+  overflow: hidden;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
 }
 
 .mini-cards__item-img img {
@@ -1294,6 +1300,8 @@ ul {
 }
 
 .manager {
+  overflow: hidden;
+  border: 1px solid #826a45;
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
   -webkit-animation: upDown .7s linear 2s infinite alternate;
@@ -1474,7 +1482,18 @@ ul {
   .main {
     text-align: center;
     padding-bottom: 3rem;
+    background: #826a45;
+    padding-top: 0;
+    margin-top: 0;
     margin-bottom: -10px;
+  }
+  .main_bg_mb {
+    background-image: url("../img/main-bg-min.png");
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin-top: -10px;
   }
   .main__title {
     font-size: 1.9rem;
@@ -1493,11 +1512,11 @@ ul {
     display: block;
   }
   .main__form {
-    width: 85%;
-    max-width: 400px;
+    display: none;
   }
   .main__cards {
     bottom: unset;
+    margin-top: 3rem;
     position: relative;
   }
   .main-cards {
@@ -1512,7 +1531,6 @@ ul {
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin-top: 1rem;
   }
   .main-cards__item {
     width: 48%;
@@ -1620,11 +1638,29 @@ ul {
   .local-tourism-cards__item {
     max-width: 94%;
   }
+  .team .arrow {
+    top: 47%;
+  }
   .team .slick-slide > div {
     margin-bottom: 1rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .team .slick-slide > div:last-child {
     margin-bottom: 0;
+  }
+  .team-cards__item {
+    width: 45% !important;
+  }
+  .team-cards__person {
+    width: 80px;
+    height: auto;
   }
   .faq-tab {
     overflow: hidden;
