@@ -102,13 +102,19 @@
   	background: $accent;
   	padding-top: 0;
   	margin-top: 0;
+  	&__button-default{
+  		display: block;
+  		margin-right: auto;
+  		margin-left: auto;
+  		margin-top: 1rem;
+  	}
   	&_bg_mb{
   		background-image: url('../img/main-bg-min.png');
 			background-size: cover;
 			background-position: top center;
 			background-repeat: 	no-repeat;
 			height: 100vh;
-			margin-top: -10px;
+			margin-top: -50px;
   	}
   	&__title{
   		font-size: 1.9rem;

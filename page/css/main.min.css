@@ -494,6 +494,10 @@ ul {
           align-items: center;
 }
 
+.main__button-default {
+  display: none;
+}
+
 .main__title {
   font-weight: 200;
   font-size: 4rem;
@@ -1487,13 +1491,19 @@ ul {
     margin-top: 0;
     margin-bottom: -10px;
   }
+  .main__button-default {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 1rem;
+  }
   .main_bg_mb {
     background-image: url("../img/main-bg-min.png");
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
     height: 100vh;
-    margin-top: -10px;
+    margin-top: -50px;
   }
   .main__title {
     font-size: 1.9rem;

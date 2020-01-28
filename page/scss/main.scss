@@ -308,6 +308,9 @@ ul{
 	display: flex;
 	padding: 3rem 0 11rem;
 	align-items: center;
+	&__button-default{
+		display: none;
+	}
 	&__title{
 		font-weight: 	200;
 		font-size: 	4rem;
