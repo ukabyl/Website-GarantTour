@@ -1,6 +1,6 @@
 <?php
 
-$site = "qub.xsoft.kz";
+$site = "Garant Tour";
 $senderMail = "garant.tour.noreply@gmail.com";   
 $senderMailPass = "123456garanttour";
 $adminMail = "umkabylbekov@gmail.com";

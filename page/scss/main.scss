@@ -499,12 +499,6 @@ ul{
 	&__cards{
 		margin-top: 3rem;
 	}
-	&__helper{
-		position: absolute;
-		bottom: 0;
-		right: -6%;
-		bottom: -170px;
-	}
 }
 .mini-cards{
 	display: flex;
@@ -533,6 +527,12 @@ ul{
 			padding: 10px 5px;
 			font-size: .8rem;
 			position: relative;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			img{
+				margin-right: 5px;
+			}
 			&:before{
 				position: absolute;
 				content: '';
@@ -562,6 +562,20 @@ ul{
 	display: flex;
 	padding: 1rem;
 	background: #fff;
+	position: fixed;
+	right: 30px;
+	bottom: 120px;
+	transform: translateY(30px);
+	opacity: 0;
+	visibility: 0;
+	z-index: -1;
+	transition: all .5s ease;
+	&.active{
+		opacity: 1;
+		visibility: 1;
+		z-index: 99;
+		transform: translateY(0);
+	}
 	&__close{
 		position: absolute;
 		right: 15px;
@@ -609,7 +623,6 @@ ul{
 
 // ********************************* Local Tourism
 .local-tourism{
-	padding: 8.5rem 0 3rem;
 	&__cards{
 		margin-top: 3rem;
 	}
@@ -917,6 +930,37 @@ ul{
 	}
 }
 // ********************************* Footer
+
+// ********************************* Manager Trigger
+
+@keyframes upDown {
+  0% {
+  	transform: scale(1.1);
+  }
+  100% {
+  	transform: scale(1);
+  }
+}
+
+.manager{
+	animation-duration: 3s;
+  animation: upDown .7s linear 2s infinite alternate;
+	position: fixed;
+	right: 30px;
+	bottom: 30px;
+	border-radius: 100%;
+	background: $accent;
+	color: #fff;
+	font-size: 1.5rem;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 60px;
+	height: 60px;
+	z-index: 99;
+}
+// ********************************* Manager Trigger
 
 // ********************************* Sidebar
 .sidebar{

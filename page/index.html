@@ -145,12 +145,12 @@
 							</span>
 							<form>
 								<div class="form__wrapper">
-									<input required name="area" placeholder="Направление" type="text" class="form__input">
-									<input required name="phone" placeholder="+7 777 154 44 38" type="tel" class="tel-mask form__input">
-									<input required name="name" placeholder="Ваше имя" type="text" class="form__input">
+									<input autofocus="false" required name="area" placeholder="Направление" type="text" class="form__input">
+									<input autofocus="false" required name="phone" placeholder="+7 777 154 44 38" type="tel" class="tel-mask form__input">
+									<input autofocus="false" required name="name" placeholder="Ваше имя" type="text" class="form__input">
 									<button class="form__button" type="submit">Отправить заявку</button>
 									<label class="form__checked">
-										<input required type="checkbox" name="agreed">
+										<input autofocus="false" required type="checkbox" name="agreed">
 										<span>Согласен(-а) на обработку данных</span>
 									</label>
 								</div>
@@ -428,39 +428,12 @@
  					</div>
 				</div>
 			</div>
-				
-			<div class="popular-tour__helper" data-aos="fade-up" data-aos-duration="1200"
-					data-aos-anchor-placement="center-bottom">
-				<div class="helper">
-					<div class="helper__close">
-						<img src="img/close.png" align="Close" class="img-fluid">
-					</div>
-					<div class="helper__manager">
-						<img src="img/manager-placeholder-min.png" class="img-fluid">
-					</div>
-					<div class="helper__inner">
-						<div class="helper__title">
-							Не знаете с чего начать?
-						</div>
-						<div class="helper__text">
-							Наш менеджер поможет Вам подобрать
-							тур вашей мечты
-						</div>
-						<div class="helper__contacts">
-							<button class="button-default helper__button" data-izimodal-open="#modal-form">Подберите мне тур</button>
-							<a href="/" class="helper__contacts-item icon-telegram"></a>
-							<a href="/" class="helper__contacts-item icon-instagram"></a>
-							<a href="/" class="helper__contacts-item icon-whatsapp"></a>
-						</div>
-					</div>
-				</div>
-			</div>
 		</div>
 	</section>
 	<!-- ****************************************** Popular Tour -->
 
 	<!-- ****************************************** Local Touris -->
-	<section id="local-tourism" class="local-tourism">
+	<section id="local-tourism section" class="local-tourism">
 		<div class="container">
 			<h2 data-aos="fade-up" data-aos-duration="1500" class="section__title">
 				Внутренний туризм
@@ -1153,6 +1126,38 @@
 	</footer>
 	<!-- ****************************************** Footer -->
 
+	<!-- ****************************************** Helper -->
+	<div class="helper">
+		<div class="helper__close">
+			<img src="img/close.png" align="Close" class="img-fluid">
+		</div>
+		<div class="helper__manager">
+			<img src="img/manager-placeholder-min.png" class="img-fluid">
+		</div>
+		<div class="helper__inner">
+			<div class="helper__title">
+				Не знаете с чего начать?
+			</div>
+			<div class="helper__text">
+				Наш менеджер поможет Вам подобрать
+				тур вашей мечты
+			</div>
+			<div class="helper__contacts">
+				<button class="button-default helper__button" data-izimodal-open="#modal-form">Подберите мне тур</button>
+				<a href="/" class="helper__contacts-item icon-telegram"></a>
+				<a href="/" class="helper__contacts-item icon-instagram"></a>
+				<a href="/" class="helper__contacts-item icon-whatsapp"></a>
+			</div>
+		</div>
+	</div>
+	<!-- ****************************************** Helper -->
+
+	<!-- ****************************************** Manager trigger -->
+	<div class="manager">
+		<i class="icon-user"></i>
+	</div>
+	<!-- ****************************************** Manager trigger -->
+
 	<!-- ****************************************** SideBar -->
 	<div id="sidebar" class="sidebar">			
 			<div class="sidebar__wrapper">
@@ -1202,12 +1207,12 @@
 		    <div class="form">
 					<form>
 						<div class="form__wrapper">
-							<input required name="area" placeholder="Направление" type="text" class="form__input">
-							<input required name="phone" placeholder="+7 777 154 44 38" type="tel" class="tel-mask form__input">
-							<input required name="name" placeholder="Ваше имя" type="text" class="form__input">
+							<input autofocus="false" required name="area" placeholder="Направление" type="text" class="form__input">
+							<input autofocus="false" required name="phone" placeholder="+7 777 154 44 38" type="tel" class="tel-mask form__input">
+							<input autofocus="false" required name="name" placeholder="Ваше имя" type="text" class="form__input">
 							<button class="form__button" type="submit">Отправить заявку</button>
 							<label class="form__checked">
-								<input required type="checkbox" name="agreed">
+								<input autofocus="false" required type="checkbox" name="agreed">
 								<span>Согласен(-а) на обработку данных</span>
 							</label>
 						</div>

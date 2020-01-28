@@ -33,9 +33,30 @@ $(function() {
 
 	// *********************************** Slider Default
 	sliderDefault('.slider-default');
-	sliderDefault('.local-tourism__cards');
 	sliderDefault('.comment__cards');
 	// *********************************** Slider Default
+
+	// *********************************** local-tourism__cards
+	$('.local-tourism__cards').slick({
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		infinite: true,
+		nextArrow: '<div class="arrow arrow__right icon-next"></div>',
+		prevArrow: '<div class="arrow arrow__left icon-back"></div>',
+		dotsClass: 'dots',
+		dots: true,
+		responsive: [
+			{
+			  breakpoint: 996,
+			  settings: {
+			    slidesToShow: 1,
+			    rows: 2,
+			    slidesPerRow: 1,
+			  }
+			},
+		]
+	});
+	// *********************************** local-tourism__cards
 
 	// *********************************** popular-tour__cards
 	let popularTourCards = $('.popular-tour__cards');
@@ -45,18 +66,23 @@ $(function() {
       infinite: false,
      	nextArrow: '<div class="arrow arrow__right icon-next"></div>',
 			prevArrow: '<div class="arrow arrow__left icon-back"></div>',
+			dotsClass: 'dots',
+			dots: true,
 			responsive: [
 				{
 				  breakpoint: 576,
 				  settings: {
 				    slidesToShow: 2,
+				    rows: 1,
+				    slidesPerRow: 3,
+				    infinite: true
 				  }
 				}
 			]
   };
   // *********************************** popular-tour__cards
 
-	// *********************************** popular-tour__cards
+	// *********************************** Team Cards
   $('.team__cards').slick({
 		slidesToShow: 4,
 		slidesToScroll: 1,
@@ -70,11 +96,13 @@ $(function() {
 			  breakpoint: 996,
 			  settings: {
 			    slidesToShow: 1,
+			    slidesPerRow: 1,
+			    rows: 4
 			  }
 			},
 		]
 	});
-	// *********************************** popular-tour__cards
+	// *********************************** Team Cards
 
 	// *********************************** popular-tour__cards function
 	function tabContentDS() {
@@ -209,6 +237,15 @@ $(function() {
 			AOS.init();
 		}, 1000)
 	// ***************************************** AOS
+
+	// ***************************************** Manager & Helper
+	$('.manager').click(function() {
+		$('.helper').toggleClass('active');
+	})
+	$('.helper__close').click(function() {
+		$('.helper').removeClass('active');
+	})
+	// ***************************************** Manager & Helper
 
 
 });
