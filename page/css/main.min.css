@@ -1497,6 +1497,11 @@ ul {
     margin-left: auto;
     margin-top: 1rem;
   }
+  .main__button-default:hover {
+    color: #000;
+    border-color: #000;
+    background: #fff;
+  }
   .main_bg_mb {
     background-image: url("../img/main-bg-min.png");
     background-size: cover;
